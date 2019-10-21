@@ -24,9 +24,9 @@ var addOriginalSentence = function(sentence){
 
 var indexLength = addOriginalSentence(sentence);
 var divideIndex = function(sentence) {
-  var divide1 = parseInt(sentence.length);
-  var result = divide1 / 2;
-  var roundDown = Math.floor(result);
+  var divide1 = parseInt(sentence.length) / 2;
+  // var result = divide1 / 2;
+  var roundDown = Math.floor(divide1);
   var someLetter = sentence.charAt(roundDown);
   return someLetter + indexLength;
 }
@@ -38,9 +38,16 @@ var reverseString = function(sentence){
   return joinString;
 }
 
-alert(reverseString(sentence));
+// alert(reverseString(sentence));
 
-
+$ (document).ready(function(){
+  $('img#no').click(function(){
+    alert(reverseString(sentence));
+  });
+  $('img#yes').click(function(){
+    alert(sentence);
+  });
+});
 
 
 

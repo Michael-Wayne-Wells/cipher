@@ -1,0 +1,10 @@
+img {
+  margin: 100px;
+  width: 100px;
+  height: 100px;
+  border: 6px solid green;
+  border-radius: 10px;
+}
+body {
+  background-color: teal;
+}
